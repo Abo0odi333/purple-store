@@ -861,7 +861,31 @@ hr{
     }
 }
 /* ==== نهاية كود زر الواتساب ==== */
-
+/* ==== بداية كود زر الانستقرام ==== */
+.instagram-support-btn {
+    position: fixed;
+    bottom: 25px;
+    /* تحديد المكان: يمين الواتساب (25px) + عرض الزر (60px) + مسافة (15px) = 100px */
+    right: 100px; 
+    width: 60px;
+    height: 60px;
+    /* خلفية متدرجة خاصة بالانستقرام */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 999; /* أقل من الواتساب بواحد ليبقوا بنفس المستوى */
+    box-shadow: 0 4px 15px rgba(214, 36, 159, 0.5); /* ظل بلون قريب من الانستقرام */
+    transition: transform 0.3s ease;
+}
+.instagram-support-btn:hover {
+    transform: scale(1.1); 
+}
+/* ==== نهاية كود زر الانستقرام ==== */
 
 /* --- بداية كود الجوال --- */
 @media (max-width: 992px) {
@@ -972,6 +996,14 @@ hr{
     .whatsapp-support-btn {
         bottom: 20px;
         right: 20px;
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+    .instagram-support-btn {
+        bottom: 20px;
+        /* تحديد المكان للجوال: يمين الواتساب (20px) + عرض الزر (55px) + مسافة (10px) = 85px */
+        right: 85px; 
         width: 55px;
         height: 55px;
         font-size: 28px;
@@ -1217,6 +1249,9 @@ hr{
 
 <a href="https://wa.me/905061997710?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A7%D8%AD%D8%AA%D8%A7%D8%AC%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9" class="whatsapp-support-btn" target="_blank">
     <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://www.instagram.com/torex.store/" class="instagram-support-btn" target="_blank">
+    <i class="fab fa-instagram"></i>
 </a>
 <div id="cart-modal" class="cart-modal">
     <div class="cart-header">
